@@ -181,9 +181,46 @@ section.carousel{
     justify-content: center;
 }
 .featured-header .container{
-    padding: 20px 55px;
+    padding: 20px 60px;
+    color: white;
+    font-size: 31px;
+}
+section.featured{
+    display: flex;
+    justify-content: center;
 }
 section.featured .container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.wrapper-33{
+    width: 33.333%;
+    padding: 25px 30px;
+    box-sizing: border-box;
+}
+.block-feature{
+    border:solid 1px #e4e4e4;
+    border-bottom: 5px solid #3cc395;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.block-feature img{
+    
+}
+.block-feature p{
+    
+}
+.block-feature div{
+    
+}
+.wrap-buy-now span{
 
 }
-
+.wrap-buy-now button{
+    background-color: #3cc395;
+    color: white;
+    border: none;
+    border-radius: 3px;
+}
