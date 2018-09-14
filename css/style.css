@@ -75,7 +75,6 @@ nav{
 nav .container{
     padding: 10px 0px;
     display: flex;
-    justify-content: space-between;
 }
 nav .container a{
     color: white;
@@ -86,6 +85,8 @@ nav .container a{
     flex-grow: 1;
     border-right: solid 2px white;
     box-sizing: border-box;
+    font-stretch: condensed;
+    text-align: center;
 }
 nav .container a:last-of-type{
     border-right: none;
@@ -96,5 +97,38 @@ nav .container a:last-of-type{
 section.carousel{
     background-color: #40c0b8;
     display: flex;
-    j
+    justify-content: center;
+}
+.carousel .container{
+    display: flex;
+}
+.carousel .container img{
+    margin: 50px 75px;
+}
+.description{
+    width: 440px;
+}
+.description h2{
+    font-size: 61px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    color:white;
+    font-stretch: condensed;
+}
+.description p{
+    font-size: 17px;
+    color: white;
+}
+.description button{
+    color: white;
+    border: solid 3px white;
+    border-radius: 10px;
+    padding: 10px 25px;
+    font-size: 27px;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-stretch: condensed;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
 }
