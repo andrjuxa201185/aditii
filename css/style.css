@@ -139,6 +139,11 @@ section.carousel{
     padding: 10px 25px;
     font-size: 27px;
     background-color: transparent;
+    transition: all .5s;
+}
+.description button:hover{
+    background-color: white;
+    color: #40c0b8;
 }
 .description img{
     margin: 20px 0; 
@@ -156,6 +161,12 @@ section.carousel{
     justify-content: space-around;
     padding: 25px 0;
     border-right: solid 1px #e7e7e7;
+}
+.block-ad img{
+    transition: transform .5s;
+}
+.block-ad:hover > img{
+    transform: scale(1.1);
 }
 .block-ad:last-of-type{
     border: none;
@@ -205,6 +216,9 @@ section.featured .container{
     width: 33.333%;
     padding: 25px 30px;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
 }
 .block-feature{
     border:solid 1px #e4e4e4;
@@ -213,16 +227,18 @@ section.featured .container{
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-grow: 1;
+    padding: 20px 0;
 }
-.block-feature img{
-    margin-top: 45px;
+.wrapper-img{
+    flex-grow: 1;
 }
 .block-feature p{
     color: #afafaf;
     font-size: 27px;
     margin-top: 20px;
 }
-.block-feature div{
+.block-feature .wrap-buy-now{
     margin-top: 10px;
     margin-bottom: 30px;
     display: flex;
