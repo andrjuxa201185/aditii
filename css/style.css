@@ -147,7 +147,7 @@ section.carousel{
     width: 33.333%;
     display: flex;
     justify-content: space-around;
-    padding: 25px;
+    padding: 25px 0;
     border-right: solid 1px #e7e7e7;
 }
 .block-ad:last-of-type{
@@ -181,13 +181,15 @@ section.carousel{
     justify-content: center;
 }
 .featured-header .container{
-    padding: 20px 60px;
+    padding: 20px 50px;
     color: white;
     font-size: 31px;
+    box-sizing: border-box;
 }
 section.featured{
     display: flex;
     justify-content: center;
+    padding-bottom: 50px;
 }
 section.featured .container{
     display: flex;
@@ -207,20 +209,54 @@ section.featured .container{
     align-items: center;
 }
 .block-feature img{
-    
+    margin-top: 45px;
 }
 .block-feature p{
-    
+    color: #afafaf;
+    font-size: 27px;
+    margin-top: 20px;
 }
 .block-feature div{
-    
+    margin-top: 10px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
 }
 .wrap-buy-now span{
-
+    color: #afafaf;
+    font-size: 27px;
+    margin-right: 15px;
 }
 .wrap-buy-now button{
     background-color: #3cc395;
     color: white;
     border: none;
+    font-size: 20px;
     border-radius: 3px;
+    padding: 10px;
+}
+
+/* footer */
+footer section.lists{
+    display: flex;
+    justify-content: center;
+    background-color: #3cc3b5;
+}
+.lists .container{
+
+}
+footer .list{
+
+}
+.list h3{
+
+}
+.list ul{
+
+}
+.list ul li{
+
+}
+.list ul a{
+
 }
