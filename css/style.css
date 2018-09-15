@@ -110,9 +110,36 @@ section.carousel{
     display: flex;
     justify-content: center;
 }
-.carousel .container> img{
+/* .carousel .container > img{
     margin: 60px 75px;
+} */
+
+
+/* rotate t-shirt */
+.carousel .container> div.img-rotate{
+    position: relative;
+    width: 430px;
+    height: 440px;
 }
+.front, .back{
+    position: absolute;
+    top: 60px;
+    left: 75px;
+    transition: all .5s;
+    backface-visibility: hidden;
+}
+.back{
+    transform: rotate3d(0,1,0, 180deg);
+}
+.img-rotate:hover .back{
+    transform: rotate3d(0,1,0, 0deg);
+}
+.img-rotate:hover .front{
+    transform: rotate3d(0,1,0, 180deg);
+}
+/* end rotate t-shirt */
+
+
 .description{
     width: 460px;
     display: flex;
@@ -159,11 +186,13 @@ section.carousel{
     width: 33.333%;
     display: flex;
     justify-content: space-around;
+    /* align-items: center; */
     padding: 25px 0;
     border-right: solid 1px #e7e7e7;
 }
 .block-ad img{
     transition: transform .5s;
+    align-self: center;
 }
 .block-ad:hover > img{
     transform: scale(1.1);
@@ -171,17 +200,29 @@ section.carousel{
 .block-ad:last-of-type{
     border: none;
 }
+.block-ad div{
+    display: flex;
+    flex-direction: column;
+}
 .block-ad p{
     font-size: 27px;
     color: #afafaf;
+    flex-grow: 1;  /*для разного колличества текста*/
 }
 .block-ad button{
     background-color: #3cc395;
-    padding: 8px 15px;
+    padding: 6px 14px;
     border: none;
     border-radius: 3px;
     color: white;
     font-size: 19px;
+    transition: all .5s;
+    border: solid 2px #3cc395;
+    box-sizing: border-box;
+}
+.block-ad button:hover{
+    background-color: white;
+    color: #3cc395;
 }
 .block-ad div{
     display: flex;
@@ -222,14 +263,29 @@ section.featured .container{
 }
 .block-feature{
     border:solid 1px #e4e4e4;
-    border-bottom: 5px solid #3cc395;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
     flex-grow: 1;
     padding: 20px 0;
+    position: relative;
 }
+.block-feature .wrap-buy-now::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 5px;
+    position: absolute;
+    background-color: #3cc395;
+    bottom: 0;
+    left: 0;
+    transition: width .3s;
+}
+.block-feature:hover .wrap-buy-now::after{
+    width: 100%;
+}
+
 .wrapper-img{
     flex-grow: 1;
 }
@@ -261,7 +317,7 @@ section.featured .container{
     border: none;
     font-size: 20px;
     border-radius: 4px;
-    padding: 10px;
+    padding: 8px;
     transition: all .5s;
     box-sizing: border-box;
     border: solid 2px #3cc395;
