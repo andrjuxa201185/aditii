@@ -7,6 +7,10 @@ a{
     font-weight: bold;
     text-transform: uppercase;
 }
+button{
+    cursor: pointer;
+    outline: none;
+}
 /* header */
 header{
     background-color: white;
@@ -31,6 +35,7 @@ header .container{
 h1{
     font-size: 49px;
     color: #3cc3b5;
+    font-family: 'Lobster', cursive;
 }
 .search{
     width: 435px;
@@ -91,6 +96,9 @@ nav .container a{
     text-align: center;
     font-weight: inherit;
 }
+nav .container a:hover{
+    color: #d6d2d2;
+}
 nav .container a:last-of-type{
     border-right: none;
 }
@@ -131,7 +139,6 @@ section.carousel{
     padding: 10px 25px;
     font-size: 27px;
     background-color: transparent;
-    cursor: pointer;
 }
 .description img{
     margin: 20px 0; 
@@ -164,7 +171,6 @@ section.carousel{
     border-radius: 3px;
     color: white;
     font-size: 19px;
-    cursor: pointer;
 }
 .block-ad div{
     display: flex;
@@ -244,25 +250,37 @@ footer section.lists{
 }
 .lists .container{
     display: flex;
-    justify-content: space-between;
     padding: 40px 50px;
     box-sizing: border-box;
 }
 footer .list{
-
+    width: 25%;
 }
 .list h3{
     font-size: 27px;
     color: white;
     margin-bottom: 20px;
 }
-.list ul{
-
-}
 .list ul li{
     padding: 5px;
 }
-
+.list ul li a{
+    position: relative;
+}
+.list ul li a::after{
+    content: '';
+    display: block;
+    background-color: white;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    height: 1px;
+    width: 0;
+    transition: width .3s;
+}
+.list ul li:hover ::after{
+    width: 100%;
+}
 .list ul a{
     color: white;
     font-size: 15px;
