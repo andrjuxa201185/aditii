@@ -243,20 +243,38 @@ footer section.lists{
     background-color: #3cc3b5;
 }
 .lists .container{
-
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 50px;
+    box-sizing: border-box;
 }
 footer .list{
 
 }
 .list h3{
-
+    font-size: 27px;
+    color: white;
+    margin-bottom: 20px;
 }
 .list ul{
 
 }
 .list ul li{
-
+    padding: 5px;
 }
-.list ul a{
 
+.list ul a{
+    color: white;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 17px;
+    background-color: #2da89b;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
 }
